@@ -1,0 +1,31 @@
+<div class="uk-section uk-section-xsmall uk-section-default uk-margin-small-bottom uk-margin-remove-top uk-padding-remove-bottom uk-padding-remove-top">
+  {{> header }}
+</div>
+
+<div class="uk-section uk-section-xsmall uk-section-muted">
+
+  <div class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center" uk-grid>
+
+    <form class="uk-form-stacked" method="POST" action="/login">
+      <div class="uk-margin">
+        <label class="uk-form-label" for="email">Email</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" id="email" name="email" type="text" placeholder="your@email.com">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <label class="uk-form-label" for="password">Password</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" id="password" name="password" type="password">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <div class="uk-form-controls">
+          <input type="submit" class="uk-button uk-button-default" value="Login">
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+</div>

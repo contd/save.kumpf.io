@@ -1,0 +1,27 @@
+<div class="uk-section uk-section-xsmall uk-section-default uk-margin-small-bottom uk-margin-remove-top uk-padding-remove-bottom uk-padding-remove-top">
+  {{> header }}
+</div>
+
+<div class="uk-section uk-section-xsmall uk-section-default uk-margin-remove uk-padding-remove">
+
+      <table class="uk-table uk-table-striped uk-margin-remove uk-padding-remove uk-width-expand uk-table-responsive">
+        <thead>
+          <tr>
+            <th class="uk-table-expand uk-margin-left">Title</th>
+            <th>Created</th>
+            <th>Tags</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+      {{#each links }}
+
+      {{> row }}
+
+      {{/each}}
+
+        </tbody>
+      </table>
+
+</div>

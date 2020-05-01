@@ -1,0 +1,49 @@
+<div class="uk-grid uk-grid-small uk-padding-remove uk-margin-remove" uk-grid>
+
+  <div class="uk-width-auto uk-margin-remove uk-padding-remove">
+
+    <div class="uk-grid uk-grid-small uk-padding-remove uk-margin-remove" uk-grid>
+      <div class="uk-margin-remove uk-padding-remove uk-width-expand">
+        <span class="main-title">Saved</span>
+        {{#if tag}}
+        <span class="main-subtitle uk-text-uppercase">{{tag}}</span>
+        {{/if}}
+      </div>
+    </div>
+    <div class="uk-grid uk-grid-small uk-padding-remove uk-margin-remove" uk-grid>
+      <div class="uk-margin-remove uk-padding-remove">
+        {{#if session.token }}
+          <a class="uk-button uk-button-default uk-button-small uk-margin-small-left"
+            href="/logout">Logout</a>
+          <a class="uk-button uk-button-default uk-button-small uk-margin-small-left"
+          href="/">Home</a>
+          <a class="uk-button uk-button-default uk-button-small uk-margin-small-left"
+            href="/archive">Archive</a>
+          <a class="uk-button uk-button-default uk-button-small uk-margin-small-left"
+            href="{{view.url}}?view={{view.type}}">{{view.type}} View</a>
+        {{else}}
+          <a class="uk-button uk-button-default uk-button-small uk-margin-small-left"
+            href="/login">Login</a>
+        {{/if}}
+      </div>
+    </div>
+
+  </div>
+
+  <div class=" uk-flex uk-flex-wrap uk-flex-wrap-around uk-width-expand uk-flex-center uk-text-center uk-margin-remove-bottom uk-margin-remove-top uk-margin-left uk-padding-remove">
+    {{#each tags}}
+      {{#if ../archive}}
+        <span onClick="windlow.location='/archive/{{label}}';false"
+          class="badge badge-{{label}} uk-text-uppercase uk-margin-remove uk-padding-small">
+            {{label}}
+        </span>
+      {{else}}
+        <span onClick="window.location='/by/{{label}}';false"
+          class="badge badge-{{label}} uk-text-uppercase uk-margin-remove-top uk-margin-remove-bottom uk-margin-remove-left uk-margin-small-right uk-padding-small">
+            {{label}}
+        </span>
+      {{/if}}
+    {{/each}}
+  </div>
+
+</div>

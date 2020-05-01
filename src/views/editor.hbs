@@ -1,0 +1,61 @@
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vh;
+  }
+  textarea {
+    padding: 0;
+    margin: 0;
+    height: 99vh;
+    width: 99vw;
+  }
+</style>
+
+{{#each links }}
+<a class="uk-button uk-button-default uk-button-small uk-margin-small-left uk-margin-small-right uk-position-top-right"
+   href="/contents/{{id}}">EXIT EDITOR</a>
+
+<textarea name="editor1" id="editor1">{{content}}</textarea>
+
+<script>
+  function throttled(delay, fn) {
+    let lastCall = 0
+
+    return function (...args) {
+      const now = (new Date).getTime()
+      if (now - lastCall < delay) {
+        return
+      }
+      lastCall = now
+      return fn(...args)
+    }
+  }
+
+  const editorChange = (event) => {
+    const id = '{{id}}'
+    const editor = event.target
+    const newContent = editor.value
+
+    axios.put(`/api/editor/${id}`, {
+      content: newContent
+    })
+      .then(res => {
+        if (res && res.status === 200) {
+          console.log(`Saved Changes! [${id}]`)
+          //const notification1 = editor.showNotification('Saved Changes','info')
+        }
+      })
+      .catch(err => {
+        console.log(`Error PUT: ${err}`)
+        //const notification2 = editor.showNotification('Error Saving Changes','warning')
+      })
+  }
+  const throttleHandle = throttled(200, editorChange)
+  const editor = document.getElementById('editor1')
+  editor.addEventListener('change', throttleHandle)
+
+</script>
+
+{{/each}}

@@ -1,0 +1,141 @@
+.badge {
+  border-radius: 3px;
+  margin-left: 0.3em;
+  padding: 0.3em;
+  font-size: 0.7rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.badge-starred { background-color: #FFDC00; color: #111111; }
+.badge-starred:hover { background-color: #c7ab00; color: #111111; }
+
+/*=== developer ================ */
+.badge-css { background-color: #001f3f; color: #FFFFFF; }
+.badge-css:hover { background-color: #31466a; color: #FFFFFF; }
+
+.badge-devops { background-color: #0a2849; color: #FFFFFF; }
+.badge-devops:hover { background-color: #3a5075; color: #FFFFFF; }
+
+.badge-github { background-color: #153153; color: #FFFFFF; }
+.badge-github:hover { background-color: #435a80; color: #FFFFFF; }
+
+.badge-golang { background-color: #1f3a5d; color: #FFFFFF; }
+.badge-golang:hover { background-color: #4d648a; color: #FFFFFF; }
+
+.badge-programming { background-color: #2a4367; color: #FFFFFF; }
+.badge-programming:hover { background-color: #576e95; color: #FFFFFF; }
+
+.badge-javascript { background-color: #344c71; color: #FFFFFF; }
+.badge-javascript:hover { background-color: #6278a0; color: #FFFFFF; }
+
+.badge-nodejs { background-color: #3f567a; color: #FFFFFF; }
+.badge-nodejs:hover { background-color: #6d82a9; color: #FFFFFF; }
+
+.badge-typescript { background-color: #495f84; color: #FFFFFF; }
+.badge-typescript:hover { background-color: #778cb4; color: #FFFFFF; }
+
+.badge-vuejs { background-color: #54688e; color: #FFFFFF; }
+.badge-vuejs:hover { background-color: #8296be; color: #FFFFFF; }
+
+.badge-media { background-color: #5e7198; color: #FFFFFF; }
+.badge-media:hover { background-color: #8d9fc9; color: #FFFFFF; }
+
+/*=== humanity ================ */
+.badge-brain { background-color: #3d9970; color: #111111; }
+.badge-brain:hover { background-color: #006a45; color: #111111; }
+
+.badge-health { background-color: #4eaa80; color: #111111; }
+.badge-health:hover { background-color: #147a53; color: #111111; }
+
+.badge-security { background-color: #5fbb90; color: #111111; }
+.badge-security:hover { background-color: #2b8a62; color: #111111; }
+
+.badge-social { background-color: #6fcba0; color: #111111; }
+.badge-social:hover { background-color: #3c9a71; color: #111111; }
+
+.badge-politics { background-color: #80dcb0; color: #111111; }
+.badge-politics:hover { background-color: #4eaa81; color: #111111; }
+
+.badge-history { background-color: #91edc0; color: #111111; }
+.badge-history:hover { background-color: #5fba90; color: #111111; }
+
+.badge-travel { background-color: #a2fed0; color: #111111; }
+.badge-travel:hover { background-color: #70ca9f; color: #111111; }
+
+/*=== technology ================ */
+.badge-awesome { background-color: #7fdbff; color: #111111; }
+.badge-awesome:hover { background-color: #47a9cc; color: #111111; }
+
+.badge-blockchain { background-color: #8bdfff; color: #111111; }
+.badge-blockchain:hover { background-color: #56adcc; color: #111111; }
+
+.badge-data { background-color: #97e3ff; color: #111111; }
+.badge-data:hover { background-color: #64b1cc; color: #111111; }
+
+.badge-embedded { background-color: #a3e7ff; color: #111111; }
+.badge-embedded:hover { background-color: #71b5cc; color: #111111; }
+
+.badge-math { background-color: #afebff; color: #111111; }
+.badge-math:hover { background-color: #7db9cc; color: #111111; }
+
+.badge-machinelearn { background-color: #baefff; color: #111111; }
+.badge-machinelearn:hover { background-color: #88bccc; color: #111111; }
+
+.badge-maker { background-color: #c6f3ff; color: #111111; }
+.badge-maker:hover { background-color: #94c0cc; color: #111111; }
+
+.badge-linux { background-color: #d2f7ff; color: #111111; }
+.badge-linux:hover { background-color: #a0c4cc; color: #111111; }
+
+.badge-science { background-color: #defbff; color: #111111; }
+.badge-science:hover { background-color: #acc8cc; color: #111111; }
+
+.badge-shell { background-color: #eaffff; color: #111111; }
+.badge-shell:hover { background-color: #b8cccc; color: #111111; }
+
+/*=== utility ================ */
+.badge-entrepreneur { background-color: #ff4136; color: #111111; }
+.badge-entrepreneur:hover { background-color: #c4000c; color: #111111; }
+
+.badge-read { background-color: #ff7763; color: #111111; }
+.badge-read:hover { background-color: #c74638; color: #111111; }
+
+.badge-sites { background-color: #ffad90; color: #111111; }
+.badge-sites:hover { background-color: #c97d62; color: #111111; }
+
+.badge-developer { background-color: #001F3F; color: #FFFFFF; }
+.badge-developer:hover { background-color: #31466a; color: #FFFFFF; }
+
+.badge-humanity { background-color: #3D9970; color: #111111; }
+.badge-humanity:hover { background-color: #006a45; color: #111111; }
+
+.badge-utility { background-color: #FF4136; color: #111111; }
+.badge-utility:hover { background-color: #c4000c; color: #111111; }
+
+.badge-technology { background-color: #7FDBFF; color: #111111; }
+.badge-technology:hover { background-color: #47a9cc; color: #111111; }
+
+.badge-productivity { background-color: #85144B; color: #FFFFFF; }
+.badge-productivity:hover { background-color: #b84977; color: #FFFFFF; }
+
+.badge-green { background-color: #2ECC40; color: #111111; }
+.badge-green:hover { background-color: #009a00; color: #111111; }
+
+.badge-yellow { background-color: #FFDC00; color: #111111; }
+.badge-yellow:hover { background-color: #c7ab00; color: #111111; }
+
+.badge-orange { background-color: #FF851B; color: #111111; }
+.badge-orange:hover { background-color: #c55600; color: #111111; }
+
+.badge-white { background-color: #FFFFFF; color: #111111; }
+.badge-white:hover { background-color: #cccccc; color: #111111; }
+
+.badge-silver { background-color: #DDDDDD; color: #111111; }
+.badge-silver:hover { background-color: #ababab; color: #111111; }
+
+.badge-gray { background-color: #AAAAAA; color: #111111; }
+.badge-gray:hover { background-color: #7b7b7b; color: #111111; }
+
+.badge-black { background-color: #111111; color: #FFFFFF; }
+.badge-black:hover { background-color: #373737; color: #FFFFFF; }

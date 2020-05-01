@@ -1,0 +1,35 @@
+version: "3.1"
+
+networks:
+  web:
+    external: true
+
+services:
+  savedev:
+    build: .
+    container_name: savedev
+    ports:
+      - "3334:3334"
+    environment:
+      - SERVER_PORT=3334
+      - DEBUG=true
+      - NODE_ENV=development
+      - MONGO_DB=wbag
+      - MONGO_ADDRS=mongodb:27017
+    volumes:
+      - ./cache:/app/public/cache
+    labels:
+      - traefik.enable=false
+    networks:
+      - web
+
+#  mongodev:
+#    image: mongodb:latest
+#    container_name: mongodev
+#    command: mongod --smallfiles
+#    volumes:
+#      - ../mongo:/data/db
+#    labels:
+#      - traefik.enable=false
+#    networks:
+#      - web

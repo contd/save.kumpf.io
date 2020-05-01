@@ -1,0 +1,51 @@
+<div>
+  <div class="uk-card uk-card-default uk-card-hover trigger main-card" data-id="{{id}}">
+    <!-- Card Header -->
+    <div class="uk-card-header card-head-bg uk-padding-small">
+      <h4 class="uk-text-truncate uk-padding-remove uk-margin-remove">
+        <a href="/contents/{{_id}}" class="uk-link-heading" uk-tooltip="{{escape title}}">
+        {{title}}
+        </a>
+      </h4>
+      <div class="uk-grid-small uk-flex-middle uk-padding-remove uk-margin-small-top" uk-grid>
+        <div class="uk-width-expand uk-text-meta uk-text-truncate">
+          <span uk-tooltip="Saved{{escape ':'}} {{moment created_at}}">{{moment created_at}}</span>
+        </div>
+        <div class="uk-width-auto uk-margin-remove uk-flex-right">
+          {{#each tags}}
+          <span class="uk-link-muted badge badge-{{this}} uk-text-uppercase">{{this}}</span>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <!-- Card Body -->
+    <div class="uk-card-body uk-background-cover uk-light uk-height-small uk-padding-remove"
+      data-src="{{cached preview_picture id tags}}" uk-img>
+    </div>
+    <!-- Card Footer -->
+    <div class="uk-card-footer uk-text-meta uk-padding-small">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <a href="{{url}}" target="_blank" uk-tooltip="Go to saved link" class="uk-text-truncate">
+            {{> link }}
+            {{domain_name}}
+          </a>
+        </div>
+        <div class="uk-width-auto">
+          <span uk-tooltip="Reading Time{{escape ':'}} {{readtime reading_time}} min">
+            {{> clock }}
+          </span>
+          <a href="/starred/{{id}}" uk-tooltip="Toggle Starred">
+            {{> star is_starred=is_starred}}
+          </a>
+          <a href="/archived/{{id}}" uk-tooltip="Archive or Unarchive">
+            {{> check is_archived=is_archived}}
+          </a>
+          <a href="/remove/{{id}}" uk-tooltip="Delete Completely">
+            <span uk-icon="icon: trash"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

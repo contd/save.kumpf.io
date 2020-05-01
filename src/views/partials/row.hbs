@@ -1,0 +1,30 @@
+<tr>
+  <td>
+    <a href="/contents/{{_id}}" class="uk-link-heading" uk-tooltip="{{escape title}}">
+      {{title}}
+    </a>
+		<a href="{{url}}" target="_blank" uk-tooltip="{{escape url}}" class="uk-text-muted uk-margin-left">
+      <span class="uk-text-muted uk-margin-small">{{> link }}</span>
+      Original
+    </a>
+  </td>
+  <td>
+    <span uk-tooltip="Date saved">{{shortMoment created_at}}</span>
+  </td>
+  <td>
+    {{#each tags}}
+      <span class="uk-link-muted badge badge-{{this}} uk-text-uppercase">{{this}}</span>
+    {{/each}}
+  </td>
+  <td>
+    <a href="/starred/{{id}}" uk-tooltip="Toggle Starred">
+      {{> star is_starred=is_starred}}
+    </a>
+    <a href="/archived/{{id}}" uk-tooltip="Archive or Unarchive">
+      {{> check is_archived=is_archived}}
+    </a>
+    <a href="/remove/{{id}}" uk-tooltip="Delete Completely">
+      {{> trash }}
+    </a>
+  </td>
+</tr>

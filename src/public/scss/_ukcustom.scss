@@ -1,0 +1,82 @@
+/*===============================================================================
+  UIkit Reference
+  ===============================================================================*/
+$color:                 #666 !default;
+$emphasis-color:        #333 !default;
+$muted-color:           #999 !default;
+$link-color:            #1e87f0 !default;
+$link-hover-color:      #0f6ecd !default;
+$inverse-color:         #fff !default;
+$background:            #fff !default;
+$muted-background:      #f8f8f8 !default;
+$primary-background:    #1e87f0 !default;
+$secondary-background:  #222 !default;
+$success-background:    #32d296 !default;
+$warning-background:    #faa05a !default;
+$danger-background:     #f0506e !default;
+$border:                #e5e5e5 !default;
+
+.main-title {
+  color: $emphasis-color;
+  font-size: 2.0rem;
+  font-weight: 700;
+  font-family: 'PT Sans Caption';
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.main-subtitle {
+  color: $color;
+  font-size: 2.0rem;
+  font-weight: 700;
+  font-family: 'PT Sans Caption';
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.article {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.0rem;
+
+  img {
+    display: block;
+    padding: 0.5em;
+  }
+}
+
+.article-title {
+  font-family: 'PT Sans Caption', sans;
+  font-weight: 700;
+  font-size: 3.0rem;
+  line-height: 100%;
+}
+
+.main-card {
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.card-head-bg {
+  background-color: #7efaff;
+}
+
+.card-bottom-trans {
+  background-color: $background;
+  margin-top: inherit;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.trigger:hover > .card-bottom-trans {
+  margin-top: -2em;
+}
+
+#datepicker {
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
