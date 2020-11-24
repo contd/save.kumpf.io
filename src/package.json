@@ -43,7 +43,7 @@
     "express-session": "^1.17.1",
     "gatemanjs": "^1.1.0",
     "helmet": "^3.22.0",
-    "highlight.js": "^10.0.1",
+    "highlight.js": "^10.1.2",
     "html-entities": "^1.3.1",
     "http-errors": "^1.7.3",
     "jsonwebtoken": "^8.5.1",
